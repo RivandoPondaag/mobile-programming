@@ -1,3 +1,5 @@
+// cuma coba
+
 ////1. Destructuring (Array & Object)////
 //Array Sebelum Es 6
 // function getScores(){
