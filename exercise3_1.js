@@ -1,4 +1,5 @@
 /*
+Nama Kelompok : 
 Marietta Ardelia Gavrila Unenor
 Nariva Charline Wagey
 Rivando Morten Pondaag
@@ -24,11 +25,11 @@ Soal
 //Jawaban
 // 1. MODULE
 
-// Import ex. 1
+// Import exercise. 1
 import { latihan1 } from './export.js';
 console.log(latihan1);
 
-// Import ex. 2
+// Import exercise. 2
 import { helloWorld, object } from './export.js';
 helloWorld();
 console.log(object);
