@@ -1,3 +1,9 @@
+// Nama Kelompok :
+// Alfan F.A. Topik
+// Chrisnov Pala'langan
+// Rivando Morten Pondaag
+// Nariva Charline Wagey
+// Marietta Ardelia Gavrila unenor
 
 // Export ex. 1
 export const latihan1 = "Ini adalah latihan 1";
