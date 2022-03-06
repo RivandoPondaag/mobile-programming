@@ -1,6 +1,9 @@
 import { SafeAreaView, View, Text, TouchableOpacity } from "react-native";
 import React, { useState } from "react";
 
+
+//Komponen fuctional hanyalah fungsi java script yang biasa menerima props sebagai argument dan mengembalikan element react
+
 // export default function App() {
 //   return (
 //     <SafeAreaView>
