@@ -10,7 +10,8 @@ import React, { useState } from "react";
 //     </SafeAreaView>
 //   )
 // }
-
+ // Cara Menggunakan Props
+ // Props kebalikan dari state, dimana props dapat berpindah component tetapi nilainya tetap tidak bisa berubah 
 // export function Tambah({props}) {
 //   return (
 //     <View>
