@@ -2,7 +2,7 @@ import React, {Component} from 'react';
 import {View, Text, StyleSheet} from 'react-native';
 // import {style} from './assets/style';
 import Palalangan from './commponents/Palalangan';
-//membuat class baru
+
 class App extends Component {
   constructor(props) {
     super(props);
