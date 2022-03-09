@@ -38,7 +38,7 @@ import React, { useState } from "react";
 //     </View>
 //   )
 // }
-
+//  menambahkan comment
 export default function App() {
   //cara menggunakan state
   //state tidak dapat berpindah component tetapi bisa berubah nilai
