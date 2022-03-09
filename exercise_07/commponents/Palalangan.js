@@ -1,3 +1,10 @@
+//Kelompok 2 : 
+// - Pondaag, Rivando Morten
+// - Pala'langan, Radocen Chrisnov
+// - Unenor, Marietta Ardelia Gavrila
+// - Wagey, Nariva Charline
+// - Topit, Alfan Fabio Andrew
+
 import React, {useState, Component} from 'react';
 import {View, Text, Button, StyleSheet, TextInput} from 'react-native';
 
