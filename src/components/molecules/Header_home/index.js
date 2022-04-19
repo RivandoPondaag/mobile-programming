@@ -1,12 +1,6 @@
-import {
-  StyleSheet,
-  Text,
-  View,
-  TouchableOpacity,
-  Dimensions,
-} from 'react-native';
+import {StyleSheet, Text, View, TouchableOpacity} from 'react-native';
 import React from 'react';
-import {IconBack, Pic} from '../../../assets/icons';
+import {IconBack, Pic, User_picture} from '../../../assets/icons';
 import {Gap} from '../../atoms';
 
 const Header = ({title, title2, onBack}) => {
@@ -23,10 +17,12 @@ const Header = ({title, title2, onBack}) => {
       <View style={styles.lapisan1}>
         <View>
           <Text style={styles.text}>{title}</Text>
-          <Text style={styles.text_2}>{title2}</Text>
+          <Text style={styles.text}>{title2}</Text>
         </View>
         <View style={styles.pic}>
-          <Pic />
+          <TouchableOpacity activeOpacity={0.7}>
+            <User_picture />
+          </TouchableOpacity>
         </View>
       </View>
     </View>
@@ -35,36 +31,27 @@ const Header = ({title, title2, onBack}) => {
 
 export default Header;
 
-const windowHeight = Dimensions.get('window').width;
-
 const styles = StyleSheet.create({
   container: {
     paddingLeft: 24,
-    paddingVertical: 38,
-    backgroundColor: 'white',
-    flexDirection: 'column',
-    alignItems: 'flex-start',
-  },
-  text: {
-    fontSize: 22,
-    fontFamily: 'Poppins-Medium',
-    color: '#020202',
-  },
-  text_2: {
-    fontSize: 14,
-    fontFamily: 'Poppins-Light',
-  },
-  back: {
-    padding: 10,
-  },
-  pic: {
-    paddingLeft: 150,
-    alignSelf: 'flex-start',
+    paddingVertical: 20,
     flexDirection: 'column',
   },
   lapisan1: {
     flexDirection: 'row',
     alignItems: 'center',
-    justifyContent: 'space-between',
+  },
+  pic: {
+    paddingLeft: 100,
+    paddingRight: 20,
+    alignSelf: 'center',
+  },
+  text: {
+    fontSize: 25,
+    fontFamily: 'Poppins-Regular',
+    color: '#000000',
+  },
+  back: {
+    padding: 10,
   },
 });
