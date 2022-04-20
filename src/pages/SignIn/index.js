@@ -22,7 +22,7 @@ const SignIn = ({navigation}) => {
         <View style={styles.text1}>
           <Text style={styles.text2}>Create new account?</Text>
           <TouchableOpacity
-            onPress={() => navigation.navigate('About')}
+            onPress={() => navigation.navigate('SignUp')}
             activeOpacity={0.7}>
             <Text style={styles.text3}>Click Here</Text>
           </TouchableOpacity>
