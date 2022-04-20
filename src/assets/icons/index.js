@@ -7,6 +7,14 @@ import Klappertaart from './Klappertaart.svg';
 import Koyabu from './Koyabu.svg';
 import Dodol_Amurang from './Dodol_Amurang.svg';
 import Sambal_Ikan_Roa from './Sambal_Ikan_Roa.svg';
+import Home_active from './Home_active.svg';
+import Home_not_active from './Home_not_active.svg';
+import Cart_active from './Cart_active.svg';
+import Cart_not_active from './Cart_not_active.svg';
+import History_active from './History_active.svg';
+import History_not_active from './History_not_active.svg';
+import About_active from './About_active.svg';
+import About_not_active from './About_not_active.svg';
 
 export {
   Logo,
@@ -18,4 +26,12 @@ export {
   Koyabu,
   Dodol_Amurang,
   Sambal_Ikan_Roa,
+  Home_active,
+  Home_not_active,
+  Cart_active,
+  Cart_not_active,
+  History_active,
+  History_not_active,
+  About_active,
+  About_not_active,
 };

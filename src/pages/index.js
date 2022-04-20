@@ -2,5 +2,20 @@ import SplashScreen from './SplashScreen';
 import SignIn from './SignIn';
 import SignUp from './SignUp';
 import Home from './Home';
+import Cart from './Cart';
+import History from './History';
+import About from './About';
+import MyAccount from './MyAccount';
+import TopUp from './TopUp';
 
-export {SplashScreen, SignIn, SignUp, Home};
+export {
+  SplashScreen,
+  SignIn,
+  SignUp,
+  Home,
+  Cart,
+  History,
+  About,
+  MyAccount,
+  TopUp,
+};

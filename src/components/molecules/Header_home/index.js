@@ -3,7 +3,7 @@ import React from 'react';
 import {IconBack, Pic, User_picture} from '../../../assets/icons';
 import {Gap} from '../../atoms';
 
-const Header = ({title, title2, onBack}) => {
+const Header = ({title, title2, onBack, onPress}) => {
   return (
     <View style={styles.container}>
       {onBack && (
@@ -20,7 +20,7 @@ const Header = ({title, title2, onBack}) => {
           <Text style={styles.text}>{title2}</Text>
         </View>
         <View style={styles.pic}>
-          <TouchableOpacity activeOpacity={0.7}>
+          <TouchableOpacity onPress={onPress} activeOpacity={0.7}>
             <User_picture />
           </TouchableOpacity>
         </View>

@@ -5,7 +5,7 @@ import {Header, Gap, Button, TextInput} from '../../components';
 const SignUp = ({navigation}) => {
   return (
     <View style={styles.Page}>
-      <Header title="Sing Up" onBack={() => navigation.goBack()} />
+      <Header title="Sign Up" onBack={() => navigation.goBack()} />
       <View style={styles.contentWrapper}>
         <View style={styles.avatarWrapper}>
           <View style={styles.border}>

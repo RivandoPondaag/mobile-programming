@@ -13,10 +13,7 @@ const SignIn = ({navigation}) => {
       </View>
       <View style={styles.contentWrapper}>
         <Gap height={46} />
-        <TextInput
-          title="Full Name"
-          placeholder="Type your full name"
-        />
+        <TextInput title="Full Name" placeholder="Type your full name" />
         <Gap height={16} />
         <TextInput title="Password" placeholder="Type your password" />
         <Gap height={24} />
@@ -25,7 +22,7 @@ const SignIn = ({navigation}) => {
         <View style={styles.text1}>
           <Text style={styles.text2}>Create new account?</Text>
           <TouchableOpacity
-            onPress={() => navigation.navigate('SignUp')}
+            onPress={() => navigation.navigate('About')}
             activeOpacity={0.7}>
             <Text style={styles.text3}>Click Here</Text>
           </TouchableOpacity>

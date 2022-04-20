@@ -13,7 +13,11 @@ const SignIn = ({navigation}) => {
   return (
     <View style={styles.page}>
       <View style={styles.container}>
-        <Header_home title="Choose the" title2="favorite you love" />
+        <Header_home
+          onPress={() => navigation.navigate('MyAccount')}
+          title="Choose the"
+          title2="favorite you love"
+        />
       </View>
       <View style={styles.contentWrapper}>
         <View style={styles.contentWrapper1}>
@@ -22,7 +26,7 @@ const SignIn = ({navigation}) => {
             <Text style={styles.text2}>Rp. 500.000</Text>
           </View>
           <View>
-            <TouchableOpacity>
+            <TouchableOpacity onPress={() => navigation.navigate('TopUp')}>
               <Top_up />
             </TouchableOpacity>
           </View>

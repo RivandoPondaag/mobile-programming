@@ -1,8 +1,20 @@
 import React from 'react';
 import {createNativeStackNavigator} from '@react-navigation/native-stack';
-import {SplashScreen, SignIn, SignUp, Home} from '../pages';
+import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
+import {
+  SplashScreen,
+  SignIn,
+  SignUp,
+  Home,
+  Cart,
+  History,
+  About,
+  MyAccount,
+  TopUp,
+} from '../pages';
 
 const Stack = createNativeStackNavigator();
+const Tab = createBottomTabNavigator();
 
 const index = () => {
   return (
@@ -25,6 +37,31 @@ const index = () => {
       <Stack.Screen
         name="Home"
         component={Home}
+        options={{headerShown: false}}
+      />
+      <Stack.Screen
+        name="Cart"
+        component={Cart}
+        options={{headerShown: false}}
+      />
+      <Stack.Screen
+        name="History"
+        component={History}
+        options={{headerShown: false}}
+      />
+      <Stack.Screen
+        name="About"
+        component={About}
+        options={{headerShown: false}}
+      />
+      <Stack.Screen
+        name="MyAccount"
+        component={MyAccount}
+        options={{headerShown: false}}
+      />
+      <Stack.Screen
+        name="TopUp"
+        component={TopUp}
         options={{headerShown: false}}
       />
     </Stack.Navigator>
