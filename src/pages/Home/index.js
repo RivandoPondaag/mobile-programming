@@ -1,6 +1,12 @@
-import {StyleSheet, Text, View, TouchableOpacity} from 'react-native';
+import {
+  StyleSheet,
+  Text,
+  View,
+  TouchableOpacity,
+  ScrollView,
+} from 'react-native';
 import React from 'react';
-import {Button, Gap, Header_home, TextInput} from '../../components';
+import {Gap, Header_home} from '../../components';
 import {
   Dodol_Amurang,
   Klappertaart,
@@ -9,7 +15,7 @@ import {
   Top_up,
 } from '../../assets/icons';
 
-const SignIn = ({navigation}) => {
+const Home = ({navigation}) => {
   return (
     <View style={styles.page}>
       <View style={styles.container}>
@@ -19,62 +25,64 @@ const SignIn = ({navigation}) => {
           title2="favorite you love"
         />
       </View>
-      <View style={styles.contentWrapper}>
-        <View style={styles.contentWrapper1}>
-          <View>
-            <Text style={styles.text1}>Balance</Text>
-            <Text style={styles.text2}>Rp. 500.000</Text>
+      <ScrollView>
+        <View style={styles.contentWrapper}>
+          <View style={styles.contentWrapper1}>
+            <View>
+              <Text style={styles.text1}>Balance</Text>
+              <Text style={styles.text2}>Rp. 500.000</Text>
+            </View>
+            <View>
+              <TouchableOpacity onPress={() => navigation.navigate('TopUp')}>
+                <Top_up />
+              </TouchableOpacity>
+            </View>
           </View>
-          <View>
-            <TouchableOpacity onPress={() => navigation.navigate('TopUp')}>
-              <Top_up />
+          <Gap height={22} />
+          <View style={styles.gambar}>
+            <TouchableOpacity activeOpacity={0.7}>
+              <Dodol_Amurang />
+            </TouchableOpacity>
+            <TouchableOpacity activeOpacity={0.7}>
+              <Sambal_Ikan_Roa />
             </TouchableOpacity>
           </View>
-        </View>
-        <Gap height={22} />
-        <View style={styles.gambar}>
-          <TouchableOpacity activeOpacity={0.7}>
-            <Dodol_Amurang />
-          </TouchableOpacity>
-          <TouchableOpacity activeOpacity={0.7}>
-            <Sambal_Ikan_Roa />
-          </TouchableOpacity>
-        </View>
-        <Gap height={6} />
-        <View style={styles.tulisan}>
-          <View style={styles.tulisan1}>
-            <Text style={styles.tulisan2}>Dodol</Text>
-            <Text style={styles.tulisan2}>Amurang</Text>
+          <Gap height={6} />
+          <View style={styles.tulisan}>
+            <View style={styles.tulisan1}>
+              <Text style={styles.tulisan2}>Dodol</Text>
+              <Text style={styles.tulisan2}>Amurang</Text>
+            </View>
+            <View style={styles.tulisan1}>
+              <Text style={styles.tulisan2}>Sambal</Text>
+              <Text style={styles.tulisan2}>Ikan Roa</Text>
+            </View>
           </View>
-          <View style={styles.tulisan1}>
-            <Text style={styles.tulisan2}>Sambal</Text>
-            <Text style={styles.tulisan2}>Ikan Roa</Text>
+          <Gap height={20} />
+          <View style={styles.gambar}>
+            <TouchableOpacity activeOpacity={0.7}>
+              <Koyabu />
+            </TouchableOpacity>
+            <TouchableOpacity activeOpacity={0.7}>
+              <Klappertaart />
+            </TouchableOpacity>
           </View>
-        </View>
-        <Gap height={20} />
-        <View style={styles.gambar}>
-          <TouchableOpacity activeOpacity={0.7}>
-            <Koyabu />
-          </TouchableOpacity>
-          <TouchableOpacity activeOpacity={0.7}>
-            <Klappertaart />
-          </TouchableOpacity>
-        </View>
-        <Gap height={6} />
-        <View style={styles.tulisan3}>
-          <View style={styles.tulisan1}>
-            <Text style={styles.tulisan2}>Koyabu</Text>
-          </View>
-          <View style={styles.tulisan1}>
-            <Text style={styles.tulisan2}>Klappertaart</Text>
+          <Gap height={6} />
+          <View style={styles.tulisan3}>
+            <View style={styles.tulisan1}>
+              <Text style={styles.tulisan2}>Koyabu</Text>
+            </View>
+            <View style={styles.tulisan1}>
+              <Text style={styles.tulisan2}>Klappertaart</Text>
+            </View>
           </View>
         </View>
-      </View>
+      </ScrollView>
     </View>
   );
 };
 
-export default SignIn;
+export default Home;
 
 const styles = StyleSheet.create({
   page: {
@@ -106,7 +114,7 @@ const styles = StyleSheet.create({
     borderRadius: 10,
     borderWidth: 1,
 
-    //shadow contener Balance
+    //shadow container Balance
     shadowColor: '#000',
     shadowOffset: {
       width: 0,
@@ -152,5 +160,6 @@ const styles = StyleSheet.create({
     paddingRight: 57,
     flexDirection: 'row',
     justifyContent: 'space-between',
+    paddingBottom: 30,
   },
 });

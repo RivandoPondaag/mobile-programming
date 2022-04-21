@@ -12,11 +12,31 @@ import {
   MyAccount,
   TopUp,
 } from '../pages';
+import ButtomNavigator from '../components/ButtomNavigator';
 
 const Stack = createNativeStackNavigator();
 const Tab = createBottomTabNavigator();
 
-const index = () => {
+const MainApp = () => {
+  return (
+    <Tab.Navigator tabBar={props => <ButtomNavigator {...props} />}>
+      <Tab.Screen name="Home" component={Home} options={{headerShown: false}} />
+      <Tab.Screen name="Cart" component={Cart} options={{headerShown: false}} />
+      <Tab.Screen
+        name="History"
+        component={History}
+        options={{headerShown: false}}
+      />
+      <Tab.Screen
+        name="About"
+        component={About}
+        options={{headerShown: false}}
+      />
+    </Tab.Navigator>
+  );
+};
+
+const router = () => {
   return (
     <Stack.Navigator initialRouteName="SplashScreen">
       <Stack.Screen
@@ -35,23 +55,8 @@ const index = () => {
         options={{headerShown: false}}
       />
       <Stack.Screen
-        name="Home"
-        component={Home}
-        options={{headerShown: false}}
-      />
-      <Stack.Screen
-        name="Cart"
-        component={Cart}
-        options={{headerShown: false}}
-      />
-      <Stack.Screen
-        name="History"
-        component={History}
-        options={{headerShown: false}}
-      />
-      <Stack.Screen
-        name="About"
-        component={About}
+        name="MainApp"
+        component={MainApp}
         options={{headerShown: false}}
       />
       <Stack.Screen
@@ -68,4 +73,4 @@ const index = () => {
   );
 };
 
-export default index;
+export default router;
