@@ -93,13 +93,13 @@ const styles = StyleSheet.create({
     backgroundColor: '#069A8E',
     justifyContent: 'center',
     alignItems: 'center',
+    marginBottom: 24,
   },
   contentWrapper: {
     flex: 1,
     backgroundColor: 'white',
     paddingHorizontal: 24,
     paddingTop: 26,
-    marginTop: 24,
   },
   contentWrapper1: {
     flexDirection: 'row',

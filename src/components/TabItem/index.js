@@ -24,7 +24,7 @@ const TabItem = ({isFocused, onPress, onLongPress, label}) => {
       return isFocused ? <History_active /> : <History_not_active />;
 
     if (label === 'About')
-      return isFocused ? <About_active /> : <About_not_active />;
+      return isFocused ? <About_active style={styles.gambar} /> : <About_not_active style={styles.gambar}/>;
 
     return <Home_active />;
   };
@@ -45,6 +45,9 @@ export default TabItem;
 const styles = StyleSheet.create({
   container: {
     alignItems: 'center',
+  },
+  gambar : {
+    paddingTop: 32,
   },
   Text: isFocused => ({
     color: isFocused ? WARNA_UTAMA : WARNA_DISABLE,

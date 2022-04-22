@@ -56,7 +56,8 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     backgroundColor: '#FFFFFF',
     justifyContent: 'space-between',
-    paddingHorizontal: 80,
+    paddingHorizontal: 30,
+    marginTop: 5,
     paddingVertical: 15,
   },
 });

@@ -61,7 +61,7 @@ const SignUp = ({navigation}) => {
         <TextInput title={'Phone Number'} placeholder="Type your number" />
         <Gap height={6} />
         <TextInput title={'Password'} placeholder="Type your password" />
-        <Gap height={17} />
+        <Gap height={30} />
         <Button
           title={'Continue'}
           onPress={() => navigation.navigate('MainApp')}
