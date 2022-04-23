@@ -5,7 +5,7 @@ import {Header} from '../../components';
 const History = ({navigation}) => {
   return (
     <View>
-      <Header title="History" onBack={() => navigation.goBack()} />
+      <Header title="History" />
     </View>
   );
 };

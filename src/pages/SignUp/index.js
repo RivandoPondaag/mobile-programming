@@ -1,5 +1,12 @@
-import {StyleSheet, Text, View, TouchableOpacity, Image} from 'react-native';
-import React, {useState} from 'react';
+import {
+  StyleSheet,
+  Text,
+  View,
+  TouchableOpacity,
+  Image,
+  TextInput as TextInputRN,
+} from 'react-native';
+import React, {useState, useEffect} from 'react';
 import {Button, Gap, Header, TextInput} from '../../components';
 import {launchImageLibrary} from 'react-native-image-picker';
 import {showMessage} from 'react-native-flash-message';
@@ -58,9 +65,21 @@ const SignUp = ({navigation}) => {
         <Gap height={6} />
         <TextInput title={'Address'} placeholder="Type your address" />
         <Gap height={6} />
-        <TextInput title={'Phone Number'} placeholder="Type your number" />
+        <Text style={styles.text0}>Phone Number</Text>
+        <TextInputRN
+          style={styles.input}
+          title="Phone Number"
+          placeholder="Type your phone number"
+          keyboardType="phone-pad"
+        />
         <Gap height={6} />
-        <TextInput title={'Password'} placeholder="Type your password" />
+        <Text style={styles.text0}>Password</Text>
+        <TextInputRN
+          style={styles.input}
+          title="Password"
+          placeholder="Type your password"
+          secureTextEntry={true}
+        />
         <Gap height={30} />
         <Button
           title={'Continue'}
@@ -117,5 +136,18 @@ const styles = StyleSheet.create({
     marginTop: 26,
     marginBottom: 16,
     justifyContent: 'center',
+  },
+  text0: {
+    fontSize: 16,
+    fontFamily: 'Poppins-Regular',
+    marginBottom: 6,
+    color: '#000000',
+  },
+  input: {
+    borderWidth: 1,
+    borderColor: '#020202',
+    borderRadius: 8,
+    paddingLeft: 10,
+    paddingHorizontal: 10,
   },
 });

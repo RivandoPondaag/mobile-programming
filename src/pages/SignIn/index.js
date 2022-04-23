@@ -1,4 +1,10 @@
-import {StyleSheet, Text, View, TouchableOpacity} from 'react-native';
+import {
+  StyleSheet,
+  Text,
+  View,
+  TouchableOpacity,
+  TextInput as TextInputRN,
+} from 'react-native';
 import React from 'react';
 import {Button, Gap, TextInput} from '../../components';
 import {Logo1} from '../../assets/icons';
@@ -15,9 +21,18 @@ const SignIn = ({navigation}) => {
         <Gap height={46} />
         <TextInput title="Full Name" placeholder="Type your full name" />
         <Gap height={16} />
-        <TextInput title="Password" placeholder="Type your password" />
+        <Text style={styles.text0}>Password</Text>
+        <TextInputRN
+          style={styles.input}
+          title="Password"
+          placeholder="Type your password"
+          secureTextEntry={true}
+        />
         <Gap height={24} />
-        <Button title="Sign In" />
+        <Button
+          title="Sign In"
+          onPress={() => navigation.navigate('MainApp')}
+        />
         <Gap height={12} />
         <View style={styles.text1}>
           <Text style={styles.text2}>Create new account?</Text>
@@ -70,5 +85,18 @@ const styles = StyleSheet.create({
   text3: {
     color: '#175821',
     fontFamily: 'Poppins-Bold',
+  },
+  text0: {
+    fontSize: 16,
+    fontFamily: 'Poppins-Regular',
+    marginBottom: 6,
+    color: '#000000',
+  },
+  input: {
+    borderWidth: 1,
+    borderColor: '#020202',
+    borderRadius: 8,
+    paddingLeft: 10,
+    paddingHorizontal: 10,
   },
 });

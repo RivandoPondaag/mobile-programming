@@ -19,20 +19,20 @@ import {
 const Home = ({navigation}) => {
   return (
     <View style={styles.page}>
-      <View style={styles.container}>
-        <View>
-          <Text style={styles.text}>Choose the</Text>
-          <Text style={styles.text}>favorite you love</Text>
-        </View>
-        <View>
-          <TouchableOpacity
-            onPress={() => navigation.navigate('MyAccount')}
-            activeOpacity={0.7}>
-            <User_picture />
-          </TouchableOpacity>
-        </View>
-      </View>
       <ScrollView>
+        <View style={styles.container}>
+          <View>
+            <Text style={styles.text}>Choose the</Text>
+            <Text style={styles.text}>favorite you love</Text>
+          </View>
+          <View>
+            <TouchableOpacity
+              onPress={() => navigation.navigate('MyAccount')}
+              activeOpacity={0.7}>
+              <User_picture />
+            </TouchableOpacity>
+          </View>
+        </View>
         <View style={styles.contentWrapper}>
           <View style={styles.contentWrapper1}>
             <View>

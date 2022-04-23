@@ -41,7 +41,11 @@ const TopUp = ({navigation}) => {
       <View style={styles.contentWrapper}>
         <View style={styles.container4}>
           <View style={styles.input1}>
-            <TextInput style={styles.input} placeholder={'Enter Your Money'} />
+            <TextInput
+              style={styles.input}
+              placeholder={'Enter Your Money'}
+              keyboardType={'numeric'}
+            />
             <Gap height={20} />
             <TouchableOpacity activeOpacity={0.7}>
               <View style={styles.topup}>

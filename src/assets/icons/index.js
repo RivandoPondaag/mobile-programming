@@ -15,6 +15,8 @@ import History_active from './History_active.svg';
 import History_not_active from './History_not_active.svg';
 import About_active from './About_active.svg';
 import About_not_active from './About_not_active.svg';
+import View_show_light from './View_show_light.svg';
+import View_hide_light from './View_hide_light.svg';
 
 export {
   Logo,
@@ -34,4 +36,6 @@ export {
   History_not_active,
   About_active,
   About_not_active,
+  View_show_light,
+  View_hide_light,
 };

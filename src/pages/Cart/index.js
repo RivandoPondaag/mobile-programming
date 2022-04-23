@@ -5,7 +5,7 @@ import {Header} from '../../components';
 const Cart = ({navigation}) => {
   return (
     <View>
-      <Header title="Cart" onBack={() => navigation.goBack()} />
+      <Header title=" Shopping Cart" />
     </View>
   );
 };
