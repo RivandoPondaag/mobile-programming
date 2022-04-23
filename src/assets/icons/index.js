@@ -17,6 +17,7 @@ import About_active from './About_active.svg';
 import About_not_active from './About_not_active.svg';
 import View_show_light from './View_show_light.svg';
 import View_hide_light from './View_hide_light.svg';
+import About_US from './About_US.svg';
 
 export {
   Logo,
@@ -38,4 +39,5 @@ export {
   About_not_active,
   View_show_light,
   View_hide_light,
+  About_US,
 };
