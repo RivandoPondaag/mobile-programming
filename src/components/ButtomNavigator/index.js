@@ -56,7 +56,7 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     backgroundColor: '#FFFFFF',
     justifyContent: 'space-between',
-    paddingHorizontal: 30,
+    paddingHorizontal: 35,
     marginTop: 5,
     paddingVertical: 15,
   },

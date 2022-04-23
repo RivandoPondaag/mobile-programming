@@ -13,17 +13,24 @@ import {
   Koyabu,
   Sambal_Ikan_Roa,
   Top_up,
+  User_picture,
 } from '../../assets/icons';
 
 const Home = ({navigation}) => {
   return (
     <View style={styles.page}>
       <View style={styles.container}>
-        <Header_home
-          onPress={() => navigation.navigate('MyAccount')}
-          title="Choose the"
-          title2="favorite you love"
-        />
+        <View>
+          <Text style={styles.text}>Choose the</Text>
+          <Text style={styles.text}>favorite you love</Text>
+        </View>
+        <View>
+          <TouchableOpacity
+            onPress={() => navigation.navigate('MyAccount')}
+            activeOpacity={0.7}>
+            <User_picture />
+          </TouchableOpacity>
+        </View>
       </View>
       <ScrollView>
         <View style={styles.contentWrapper}>
@@ -89,11 +96,14 @@ const styles = StyleSheet.create({
     flex: 1,
   },
   container: {
-    paddingVertical: 38,
+    paddingVertical: 60,
     backgroundColor: '#069A8E',
     justifyContent: 'center',
     alignItems: 'center',
     marginBottom: 24,
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    paddingHorizontal: 20,
   },
   contentWrapper: {
     flex: 1,
@@ -124,6 +134,11 @@ const styles = StyleSheet.create({
     shadowRadius: 3.84,
 
     elevation: 5,
+  },
+  text: {
+    fontSize: 25,
+    fontFamily: 'Poppins-Regular',
+    color: '#000000',
   },
   text1: {
     fontSize: 15,
