@@ -1,6 +1,12 @@
-import {StyleSheet, Text, View} from 'react-native';
+import {
+  StyleSheet,
+  Text,
+  View,
+  TouchableOpacity,
+  TextInput,
+} from 'react-native';
 import React from 'react';
-import {Header} from '../../components';
+import {Gap, Header} from '../../components';
 
 const TopUp = ({navigation}) => {
   return (
@@ -8,12 +14,40 @@ const TopUp = ({navigation}) => {
       <Header title="Top Up" onBack={() => navigation.goBack()} />
       <View style={styles.contentWrapper}>
         <View style={styles.container}>
-          <View>
-            <Text style={styles.text}>AAAA</Text>
-            <Text style={styles.text1}>AAAA</Text>
-          </View>
-          <View style={styles.text2}>
-            <Text style={styles.text}>BBBB</Text>
+          <TouchableOpacity activeOpacity={0.7}>
+            <View style={styles.container1}>
+              <Text style={styles.text}>Rp. 20.000</Text>
+            </View>
+          </TouchableOpacity>
+          <TouchableOpacity activeOpacity={0.7}>
+            <View style={styles.container1}>
+              <Text style={styles.text}>Rp. 50.000</Text>
+            </View>
+          </TouchableOpacity>
+        </View>
+        <View style={styles.container3}>
+          <TouchableOpacity activeOpacity={0.7}>
+            <View style={styles.container2}>
+              <Text style={styles.text}>Rp. 100.000</Text>
+            </View>
+          </TouchableOpacity>
+          <TouchableOpacity activeOpacity={0.7}>
+            <View style={styles.container2}>
+              <Text style={styles.text}>Rp. 200.000</Text>
+            </View>
+          </TouchableOpacity>
+        </View>
+      </View>
+      <View style={styles.contentWrapper}>
+        <View style={styles.container4}>
+          <View style={styles.input1}>
+            <TextInput style={styles.input} placeholder={'Enter Your Money'} />
+            <Gap height={20} />
+            <TouchableOpacity activeOpacity={0.7}>
+              <View style={styles.topup}>
+                <Text style={styles.text1}>Top Up</Text>
+              </View>
+            </TouchableOpacity>
           </View>
         </View>
       </View>
@@ -29,32 +63,69 @@ const styles = StyleSheet.create({
   },
   contentWrapper: {
     flex: 1,
-    backgroundColor: 'white',
     marginTop: 24,
-  },
-  text: {
-    fontSize: 50,
-    backgroundColor: 'black',
-    color: 'white',
-  },
-  text1: {
-    fontSize: 50,
-    backgroundColor: 'green',
-    color: 'red',
-  },
-  text2: {
-    fontSize: 50,
-    backgroundColor: 'black',
-    color: 'white',
-    alignSelf: 'center',
-    alignItems: 'center',
-    flexDirection: 'column',
   },
   container: {
     flexDirection: 'row',
     justifyContent: 'space-between',
-    backgroundColor: 'yellow',
+    backgroundColor: 'white',
+    paddingHorizontal: 30,
+    paddingVertical: 25,
+    paddingTop: 60,
+  },
+  container3: {
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    backgroundColor: 'white',
+    paddingHorizontal: 30,
+    paddingVertical: 25,
+    paddingBottom: 60,
+  },
+  container1: {
+    backgroundColor: '#FAFAFC',
+    paddingHorizontal: 25,
+    paddingVertical: 20,
+    borderRadius: 10,
+  },
+  container2: {
+    backgroundColor: '#FAFAFC',
     paddingHorizontal: 20,
     paddingVertical: 20,
+    borderRadius: 10,
+  },
+  container4: {
+    flex: 1,
+    backgroundColor: 'white',
+    marginTop: 24,
+    justifyContent: 'center',
+    flexDirection: 'column',
+  },
+  text: {
+    fontSize: 20,
+    fontFamily: 'Poppins-Medium',
+  },
+  text1: {
+    fontSize: 16,
+    fontFamily: 'Poppins-Regular',
+    color: '#000000',
+  },
+  input: {
+    borderWidth: 1,
+    borderColor: '#020202',
+    borderRadius: 8,
+    paddingLeft: 30,
+    paddingVertical: 15,
+    fontSize: 19,
+  },
+  input1: {
+    paddingHorizontal: 40,
+    paddingVertical: 10,
+  },
+  topup: {
+    backgroundColor: '#069A8E',
+    marginHorizontal: 60,
+    paddingVertical: 15,
+    alignItems: 'center',
+    borderRadius: 8,
   },
 });
