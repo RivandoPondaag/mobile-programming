@@ -18,6 +18,11 @@ import About_not_active from './About_not_active.svg';
 import View_show_light from './View_show_light.svg';
 import View_hide_light from './View_hide_light.svg';
 import About_US from './About_US.svg';
+import Name from './Name.svg';
+import Address from './Address.svg';
+import Phone_Number from './Phone_Number.svg';
+import Password from './Password.svg';
+import Log_Out from './Log_Out.svg';
 
 export {
   Logo,
@@ -40,4 +45,10 @@ export {
   View_show_light,
   View_hide_light,
   About_US,
+  Name,
+  Address,
+  Phone_Number,
+  Password,
+  Log_Out,
+
 };
