@@ -25,6 +25,16 @@ import Password from './Password.svg';
 import Log_Out from './Log_Out.svg';
 import Edit_fill from './Edit_fill.svg';
 import Success from './Ellipse 166.svg';
+import Abon_Tuna from './Abon_Tuna.svg';
+import Bagea_Kenari from './Bagea_Kenari.svg';
+import Cakalang_Fufu from './Cakalang_Fufu.svg';
+import Kacang_Goyang from './Kacang_Goyang.svg';
+import Kue_Lampu_lampu from './Kue_Lampu-Lampu.svg';
+import Pala_Manis from './Pala_Manis.svg';
+import Panada from './Panada.svg';
+import Pia_Amurang from './Pia_Amurang.svg';
+import Pinende from './Pinende.svg';
+import Saguer from './Saguer.svg';
 
 export {
   Logo,
@@ -54,4 +64,14 @@ export {
   Log_Out,
   Edit_fill,
   Success,
+  Abon_Tuna,
+  Bagea_Kenari,
+  Cakalang_Fufu,
+  Kacang_Goyang,
+  Kue_Lampu_lampu,
+  Pala_Manis,
+  Panada,
+  Pia_Amurang,
+  Pinende,
+  Saguer,
 };
