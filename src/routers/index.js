@@ -11,6 +11,7 @@ import {
   About,
   MyAccount,
   TopUp,
+  EditAccount,
 } from '../pages';
 import ButtomNavigator from '../components/ButtomNavigator';
 
@@ -67,6 +68,11 @@ const router = () => {
       <Stack.Screen
         name="TopUp"
         component={TopUp}
+        options={{headerShown: false}}
+      />
+      <Stack.Screen
+        name="EditAccount"
+        component={EditAccount}
         options={{headerShown: false}}
       />
     </Stack.Navigator>

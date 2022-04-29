@@ -16,7 +16,7 @@ import {
   Password,
   Phone_Number,
 } from '../../assets';
-import {Gap, TextInput} from '../../components';
+import {Button, Gap, TextInput} from '../../components';
 
 const MyAccount = ({navigation}) => {
   return (
@@ -25,18 +25,11 @@ const MyAccount = ({navigation}) => {
         <View style={styles.container}>
           <View style={styles.container2}>
             <TouchableOpacity
-              onPressOut={() => navigation.navigate('MainApp')}
+              onPressOut={() => navigation.navigate('MyAccount')}
               activeOpacity={0.7}>
               <IconBack style={styles.IconBack} />
             </TouchableOpacity>
-            <View style={styles.edit}>
-              <Text style={styles.text1}>My Account</Text>
-              <TouchableOpacity
-                onPressOut={() => navigation.navigate('EditAccount')}
-                activeOpacity={0.7}>
-                <Edit_fill style={styles.Edit_fill} />
-              </TouchableOpacity>
-            </View>
+            <Text style={styles.text1}>Edit Account</Text>
           </View>
           <View>
             <View style={styles.container1}>
@@ -49,50 +42,56 @@ const MyAccount = ({navigation}) => {
           </View>
         </View>
         <View style={styles.contentWrapper}>
-          <Gap height={20} />
+          <Gap height={10} />
           <View style={styles.container3}>
             <Name style={styles.icon} />
             <View>
               <Text style={styles.text0}>Full name</Text>
-              <Text style={styles.text}>Pala'langan Radocen Chrisnov</Text>
+              <TextInputRN
+                style={styles.input}
+                title="Full name"
+                placeholder="Type your full name"
+              />
             </View>
           </View>
-          <Gap height={30} />
+          <Gap height={10} />
           <View style={styles.container3}>
             <Address style={styles.icon} />
             <View>
               <Text style={styles.text0}>Address</Text>
-              <Text style={styles.text}>Sorong Papua Barat</Text>
+              <TextInputRN
+                style={styles.input1}
+                title="Address"
+                placeholder="Type your address"
+              />
             </View>
           </View>
-          <Gap height={30} />
+          <Gap height={10} />
           <View style={styles.container3}>
             <Phone_Number style={styles.icon} />
             <View>
               <Text style={styles.text0}>Phone number</Text>
-              <Text style={styles.text}>081351388380</Text>
+              <TextInputRN
+                style={styles.input2}
+                title="Phone number"
+                placeholder="Type your phone number"
+              />
             </View>
           </View>
-          <Gap height={30} />
+          <Gap height={10} />
           <View style={styles.container3}>
             <Password style={styles.icon} />
             <View>
               <Text style={styles.text0}>Password</Text>
-              <Text style={styles.text}>student2019</Text>
+              <TextInputRN
+                style={styles.input3}
+                title="Password"
+                placeholder="Type your password"
+              />
             </View>
           </View>
-          <Gap height={10} />
-          <View style={styles.Log_Out}>
-            <View style={styles.Log_Out1}>
-              <TouchableOpacity
-                onPress={() => navigation.navigate('SignIn')}
-                activeOpacity={0.7}>
-                <Log_Out style={styles.icon1} />
-              </TouchableOpacity>
-              <Gap height={3} />
-              <Text>Log Out</Text>
-            </View>
-          </View>
+          <Gap height={20} />
+          <Button style={styles.save} title="Save" />
         </View>
       </ScrollView>
     </View>
@@ -108,7 +107,7 @@ const styles = StyleSheet.create({
   contentWrapper: {
     flex: 1,
     backgroundColor: 'white',
-    paddingHorizontal: 15,
+    paddingHorizontal: 20,
     paddingTop: 20,
     paddingBottom: 52,
     marginTop: 24,
@@ -140,6 +139,7 @@ const styles = StyleSheet.create({
     marginRight: 15,
     paddingHorizontal: 25,
     paddingVertical: 25,
+    marginTop: 20,
   },
   icon1: {
     paddingHorizontal: 20,
@@ -209,19 +209,5 @@ const styles = StyleSheet.create({
   Log_Out1: {
     flexDirection: 'column',
     alignItems: 'center',
-  },
-  Edit_fill: {
-    paddingHorizontal: 20,
-    paddingVertical: 20,
-    paddingLeft: 320,
-  },
-  edit: {
-    flexDirection: 'row',
-    alignContent: 'space-between',
-  },
-  text: {
-    fontSize: 20,
-    fontFamily: 'Poppins-Medium',
-    color: '#000000',
   },
 });

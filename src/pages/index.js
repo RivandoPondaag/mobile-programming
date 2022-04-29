@@ -7,6 +7,7 @@ import History from './History';
 import About from './About';
 import MyAccount from './MyAccount';
 import TopUp from './TopUp';
+import EditAccount from './EditAccount';
 
 export {
   SplashScreen,
@@ -18,4 +19,5 @@ export {
   About,
   MyAccount,
   TopUp,
+  EditAccount,
 };
