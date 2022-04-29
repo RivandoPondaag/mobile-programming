@@ -101,6 +101,121 @@ const Home = ({navigation}) => {
               <Text style={styles.tulisan2}>Klappertaart</Text>
             </View>
           </View>
+          <View style={styles.gambar}>
+            <TouchableOpacity
+              onPress={() => navigation.navigate('Transaksi')}
+              activeOpacity={0.7}>
+              <Kacang_Goyang />
+            </TouchableOpacity>
+            <TouchableOpacity
+              onPress={() => navigation.navigate('Transaksi')}
+              activeOpacity={0.7}>
+              <Pala_Manis />
+            </TouchableOpacity>
+          </View>
+          <Gap height={6} />
+          <View style={styles.tulisan9}>
+            <View style={styles.tulisan1}>
+              <Text style={styles.tulisan2}>Kacang</Text>
+              <Text style={styles.tulisan2}>Goyang</Text>
+            </View>
+            <View style={styles.tulisan1}>
+              <Text style={styles.tulisan2}>Pala</Text>
+              <Text style={styles.tulisan2}>Manis</Text>
+            </View>
+          </View>
+          <Gap height={20} />
+          <View style={styles.gambar}>
+            <TouchableOpacity
+              onPress={() => navigation.navigate('Transaksi')}
+              activeOpacity={0.7}>
+              <Bagea_Kenari />
+            </TouchableOpacity>
+            <TouchableOpacity
+              onPress={() => navigation.navigate('Transaksi')}
+              activeOpacity={0.7}>
+              <Cakalang_Fufu />
+            </TouchableOpacity>
+          </View>
+          <Gap height={6} />
+          <View style={styles.tulisan8}>
+            <View style={styles.tulisan1}>
+              <Text style={styles.tulisan2}>Bagea</Text>
+              <Text style={styles.tulisan2}>kenari</Text>
+            </View>
+            <View style={styles.tulisan1}>
+              <Text style={styles.tulisan2}>Cakalang</Text>
+              <Text style={styles.tulisan2}>Fufu</Text>
+            </View>
+          </View>
+          <Gap height={20} />
+          <View style={styles.gambar}>
+            <TouchableOpacity
+              onPress={() => navigation.navigate('Transaksi')}
+              activeOpacity={0.7}>
+              <Panada />
+            </TouchableOpacity>
+            <TouchableOpacity
+              onPress={() => navigation.navigate('Transaksi')}
+              activeOpacity={0.7}>
+              <Abon_Tuna />
+            </TouchableOpacity>
+          </View>
+          <Gap height={6} />
+          <View style={styles.tulisan7}>
+            <View style={styles.tulisan1}>
+              <Text style={styles.tulisan2}>Panada</Text>
+            </View>
+            <View style={styles.tulisan1}>
+              <Text style={styles.tulisan2}>Abon Tuna</Text>
+            </View>
+          </View>
+          <Gap height={20} />
+          <View style={styles.gambar}>
+            <TouchableOpacity
+              onPress={() => navigation.navigate('Transaksi')}
+              activeOpacity={0.7}>
+              <Saguer />
+            </TouchableOpacity>
+            <TouchableOpacity
+              onPress={() => navigation.navigate('Transaksi')}
+              activeOpacity={0.7}>
+              <Pinende />
+            </TouchableOpacity>
+          </View>
+          <Gap height={6} />
+          <View style={styles.tulisan6}>
+            <View style={styles.tulisan1}>
+              <Text style={styles.tulisan2}>Saguer</Text>
+            </View>
+            <View style={styles.tulisan1}>
+              <Text style={styles.tulisan2}>Pinende</Text>
+            </View>
+          </View>
+          <Gap height={20} />
+          <View style={styles.gambar}>
+            <TouchableOpacity
+              onPress={() => navigation.navigate('Transaksi')}
+              activeOpacity={0.7}>
+              <Kue_Lampu_lampu />
+            </TouchableOpacity>
+            <TouchableOpacity
+              onPress={() => navigation.navigate('Transaksi')}
+              activeOpacity={0.7}>
+              <Pia_Amurang />
+            </TouchableOpacity>
+          </View>
+          <Gap height={6} />
+          <View style={styles.tulisan5}>
+            <View style={styles.tulisan1}>
+              <Text style={styles.tulisan2}>Kue</Text>
+              <Text style={styles.tulisan2}>Lampu-Lampu</Text>
+            </View>
+            <View style={styles.tulisan1}>
+              <Text style={styles.tulisan2}>Pia</Text>
+              <Text style={styles.tulisan2}>Amurang</Text>
+            </View>
+          </View>
         </View>
       </ScrollView>
     </View>
@@ -190,6 +305,37 @@ const styles = StyleSheet.create({
   tulisan3: {
     paddingLeft: 77,
     paddingRight: 57,
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    paddingBottom: 30,
+  },
+  tulisan9: {
+    paddingLeft: 73,
+    paddingRight: 81,
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+  },
+  tulisan8: {
+    paddingLeft: 78,
+    paddingRight: 67,
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+  },
+  tulisan7: {
+    paddingLeft: 74,
+    paddingRight: 65,
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+  },
+  tulisan6: {
+    paddingLeft: 78,
+    paddingRight: 73,
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+  },
+  tulisan5: {
+    paddingLeft: 49,
+    paddingRight: 68,
     flexDirection: 'row',
     justifyContent: 'space-between',
     paddingBottom: 30,
