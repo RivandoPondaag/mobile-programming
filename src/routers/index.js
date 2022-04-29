@@ -12,6 +12,8 @@ import {
   MyAccount,
   TopUp,
   EditAccount,
+  TransaksiSelesai,
+  Transaksi,
 } from '../pages';
 import ButtomNavigator from '../components/ButtomNavigator';
 

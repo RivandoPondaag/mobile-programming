@@ -14,6 +14,16 @@ import {
   Sambal_Ikan_Roa,
   Top_up,
   User_picture,
+  Abon_Tuna,
+  Bagea_Kenari,
+  Cakalang_Fufu,
+  Kacang_Goyang,
+  Kue_Lampu_lampu,
+  Pala_Manis,
+  Panada,
+  Pia_Amurang,
+  Pinende,
+  Saguer,
 } from '../../assets/icons';
 
 const Home = ({navigation}) => {
