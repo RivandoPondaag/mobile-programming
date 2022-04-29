@@ -8,6 +8,9 @@ import About from './About';
 import MyAccount from './MyAccount';
 import TopUp from './TopUp';
 import EditAccount from './EditAccount';
+import TransaksiSelesai from './TransaksiSelesai';
+import Transaksi from './Transaksi';
+
 
 export {
   SplashScreen,
@@ -20,4 +23,6 @@ export {
   MyAccount,
   TopUp,
   EditAccount,
+  TransaksiSelesai,
+  Transaksi,
 };

@@ -24,6 +24,7 @@ import Phone_Number from './Phone_Number.svg';
 import Password from './Password.svg';
 import Log_Out from './Log_Out.svg';
 import Edit_fill from './Edit_fill.svg';
+import Success from './Ellipse 166.svg';
 
 export {
   Logo,
@@ -52,4 +53,5 @@ export {
   Password,
   Log_Out,
   Edit_fill,
+  Success,
 };

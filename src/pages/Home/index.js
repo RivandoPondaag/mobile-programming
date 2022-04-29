@@ -47,10 +47,14 @@ const Home = ({navigation}) => {
           </View>
           <Gap height={22} />
           <View style={styles.gambar}>
-            <TouchableOpacity activeOpacity={0.7}>
+            <TouchableOpacity
+              onPress={() => navigation.navigate('Transaksi')}
+              activeOpacity={0.7}>
               <Dodol_Amurang />
             </TouchableOpacity>
-            <TouchableOpacity activeOpacity={0.7}>
+            <TouchableOpacity
+              onPress={() => navigation.navigate('Transaksi')}
+              activeOpacity={0.7}>
               <Sambal_Ikan_Roa />
             </TouchableOpacity>
           </View>
@@ -67,10 +71,14 @@ const Home = ({navigation}) => {
           </View>
           <Gap height={20} />
           <View style={styles.gambar}>
-            <TouchableOpacity activeOpacity={0.7}>
+            <TouchableOpacity
+              onPress={() => navigation.navigate('Transaksi')}
+              activeOpacity={0.7}>
               <Koyabu />
             </TouchableOpacity>
-            <TouchableOpacity activeOpacity={0.7}>
+            <TouchableOpacity
+              onPress={() => navigation.navigate('Transaksi')}
+              activeOpacity={0.7}>
               <Klappertaart />
             </TouchableOpacity>
           </View>

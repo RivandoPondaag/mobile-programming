@@ -75,6 +75,16 @@ const router = () => {
         component={EditAccount}
         options={{headerShown: false}}
       />
+      <Stack.Screen
+        name="TransaksiSelesai"
+        component={TransaksiSelesai}
+        options={{headerShown: false}}
+      />
+      <Stack.Screen
+        name="Transaksi"
+        component={Transaksi}
+        options={{headerShown: false}}
+      />
     </Stack.Navigator>
   );
 };

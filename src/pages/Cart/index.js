@@ -37,7 +37,9 @@ const Cart = ({navigation}) => {
           <Text style={styles.text}>Rp. 52.000</Text>
         </View>
         <View>
-          <TouchableOpacity activeOpacity={0.7}>
+          <TouchableOpacity
+            onPress={() => navigation.navigate('TransaksiSelesai')}
+            activeOpacity={0.7}>
             <View style={styles.order}>
               <Text style={styles.text1}>Order</Text>
             </View>
