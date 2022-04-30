@@ -83,7 +83,7 @@ const SignUp = ({navigation}) => {
         <Gap height={30} />
         <Button
           title={'Continue'}
-          onPress={() => navigation.navigate('MainApp')}
+          onPress={() => navigation.navigate('SignIn')}
         />
       </View>
     </View>
