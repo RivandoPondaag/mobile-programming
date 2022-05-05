@@ -32,8 +32,9 @@ const Home = ({navigation}) => {
       <ScrollView>
         <View style={styles.container}>
           <View>
-            <Text style={styles.text}>Choose the</Text>
-            <Text style={styles.text}>favorite you love</Text>
+            <Text style={styles.text}>Choose your </Text>
+            <Text style={styles.text}>Favorite </Text>
+            <Text style={styles.text}>Manado food</Text>
           </View>
           <View>
             <TouchableOpacity
