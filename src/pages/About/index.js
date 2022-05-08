@@ -35,11 +35,10 @@ const About = ({navigation}) => {
           <Text style={styles.text1}>5. Wagey, Nariva Charline</Text>
           <Gap height={10} />
           <Text style={styles.text}>
-            Ucapan terima kasih kepada rekan-rekan yang telah terlibat dalam
-            mengerjakan project ini, dan terima kasih kepada Sir. Adam Stenly
-            yang telah memberikan ilmu yang luar biasa dan sangat bermanfaat
-            kepada kami dari mata-kuliah Mobile Programming semester 6 ini.
-            Sekian, Aplikasi dari OOKM.
+            Dengan adanya aplikasi ini diharapkan mempermudah wisatawan baik dalam negri
+            ataupun luar negri untuk membeli oleh-oleh khas manado dengan mudah dan harga yang
+            termurah. Aplikasi ini adalah bentuk pengambdian kami untuk memajukan pariwisata 
+            di sulawesi utara.
           </Text>
         </View>
       </ScrollView>
