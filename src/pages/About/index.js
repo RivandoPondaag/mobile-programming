@@ -60,7 +60,7 @@ const styles = StyleSheet.create({
   },
   container: {
     paddingVertical: 30,
-    backgroundColor: 'white',
+    backgroundColor: '#069A8E',
     justifyContent: 'center',
     alignItems: 'center',
     flexDirection: 'row',
@@ -94,7 +94,7 @@ const styles = StyleSheet.create({
     paddingLeft: 15,
   },
   text2: {
-    fontSize: 30,
+    fontSize: 22,
     fontFamily: 'Poppins-Medium',
     paddingLeft: 15,
     color: '#000000',

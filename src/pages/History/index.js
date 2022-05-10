@@ -6,8 +6,9 @@ const History = ({navigation}) => {
   return (
     <View style={styles.page}>
       <Header title="History" />
-      <View style={styles.contentWrapper}>
-        <View>
+      
+    
+        <View style={styles.contentWrapper1}>
           <Text style={styles.text}>20 Maret 2022</Text>
           <Gap height={15} />
           <View style={styles.row}>
@@ -21,7 +22,7 @@ const History = ({navigation}) => {
           </View>
         </View>
         <Gap height={25} />
-        <View>
+        <View style={styles.contentWrapper}>
           <Text style={styles.text}>25 Maret 2022</Text>
           <Gap height={15} />
           <View style={styles.row}>
@@ -30,7 +31,7 @@ const History = ({navigation}) => {
           </View>
         </View>
         <Gap height={25} />
-        <View>
+        <View style={styles.contentWrapper}>
           <Text style={styles.text}>30 Maret 2022</Text>
           <Gap height={15} />
           <View style={styles.row}>
@@ -39,7 +40,7 @@ const History = ({navigation}) => {
           </View>
         </View>
         <Gap height={25} />
-        <View>
+        <View style={styles.contentWrapper}>
           <Text style={styles.text}>3 April 2022</Text>
           <Gap height={15} />
           <View style={styles.row}>
@@ -52,7 +53,7 @@ const History = ({navigation}) => {
             <Text style={styles.text1}>3</Text>
           </View>
         </View>
-      </View>
+       
     </View>
   );
 };
@@ -67,9 +68,15 @@ const styles = StyleSheet.create({
     flex: 1,
     backgroundColor: 'white',
     paddingHorizontal: 24,
-    paddingTop: 20,
     paddingBottom: 52,
-    marginTop: 24,
+     
+  },
+  contentWrapper1: {
+    flex: 1,
+    backgroundColor: 'white',
+    paddingHorizontal: 24,
+    paddingBottom: 52,
+    marginTop:24  
   },
   row: {
     flexDirection: 'row',
@@ -77,14 +84,15 @@ const styles = StyleSheet.create({
     paddingHorizontal: 10,
   },
   text: {
-    color: '#676767',
+    color: 'black',
     fontSize: 24,
     fontFamily: 'Poppins-Medium',
-    paddingHorizontal: 20,
+    paddingHorizontal: 2,
   },
   text1: {
     color: '#676767',
     fontSize: 20,
     fontFamily: 'Poppins-Reguler',
+    paddingHorizontal: 12,
   },
 });
