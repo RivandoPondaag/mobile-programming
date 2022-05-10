@@ -1,8 +1,8 @@
-import {StyleSheet, Text, View, ScrollView} from 'react-native';
+import {StyleSheet, Text, View, ScrollView,ImageBackground} from 'react-native';
 import React from 'react';
 import {Gap} from '../../components';
 import {About_US} from '../../assets';
-
+import { Logo } from '../../assets';
 const About = ({navigation}) => {
   return (
     <View style={styles.page}>
@@ -16,6 +16,7 @@ const About = ({navigation}) => {
           </View>
         </View>
         <View style={styles.contentWrapper}>
+       <Logo />
           <Text style={styles.text}>
             Aplikasi Oleh-Oleh Khas Manado(OOKM) merupakan aplikasi untuk
             melakukan pemesanan makanan khas manado secara online. Dalam
@@ -40,6 +41,7 @@ const About = ({navigation}) => {
             termurah. Aplikasi ini adalah bentuk pengambdian kami untuk memajukan pariwisata 
             di sulawesi utara.
           </Text>
+          
         </View>
       </ScrollView>
     </View>
@@ -97,4 +99,8 @@ const styles = StyleSheet.create({
     paddingLeft: 15,
     color: '#000000',
   },
+  besar:{
+    width:30,
+    height:30,
+  }
 });
