@@ -6,7 +6,8 @@ import {Koyabu, Sambal_Ikan_Roa} from '../../assets';
 const Cart = ({navigation}) => {
   return (
     <View style={styles.page}>
-      <Header title="Shopping Cartt" />
+      <Header title="Shopping Cart" />
+      
       <View style={styles.contentWrapper}>
         <Gap height={10} />
         <View style={styles.produk}>

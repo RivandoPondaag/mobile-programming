@@ -7,6 +7,7 @@ import {
 } from 'react-native';
 import React from 'react';
 import {Gap, Header} from '../../components';
+import {showMessage} from 'react-native-flash-message';
 
 const TopUp = ({navigation}) => {
   return (
@@ -47,7 +48,15 @@ const TopUp = ({navigation}) => {
               keyboardType={'numeric'}
             />
             <Gap height={20} />
-            <TouchableOpacity activeOpacity={0.7}>
+            <TouchableOpacity
+              activeOpacity={0.7}
+              onPress={() => {
+                showMessage({
+                  message: 'Success',
+                  description: 'Top Up',
+                  type: 'success',
+                });
+              }}>
               <View style={styles.topup}>
                 <Text style={styles.text1}>Top Up</Text>
               </View>

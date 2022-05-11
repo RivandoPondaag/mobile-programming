@@ -83,7 +83,14 @@ const SignUp = ({navigation}) => {
         <Gap height={30} />
         <Button
           title={'Continue'}
-          onPress={() => navigation.navigate('SignIn')}
+          onPress={() => {
+            navigation.navigate('SignIn');
+            showMessage({
+              message: 'Success',
+              description: 'Create Account',
+              type: 'success',
+            });
+          }}
         />
       </View>
     </View>

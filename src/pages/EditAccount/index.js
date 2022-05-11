@@ -17,6 +17,7 @@ import {
   Phone_Number,
 } from '../../assets';
 import {Button, Gap, TextInput} from '../../components';
+import {showMessage} from 'react-native-flash-message';
 
 const MyAccount = ({navigation}) => {
   return (
@@ -91,7 +92,17 @@ const MyAccount = ({navigation}) => {
             </View>
           </View>
           <Gap height={20} />
-          <Button style={styles.save} title="Save" />
+          <Button
+            style={styles.save}
+            title="Save"
+            onPress={() => {
+              showMessage({
+                message: 'Success',
+                description: 'Edit Account',
+                type: 'success',
+              });
+            }}
+          />
         </View>
       </ScrollView>
     </View>

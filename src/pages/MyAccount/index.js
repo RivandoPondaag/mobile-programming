@@ -17,6 +17,7 @@ import {
   Phone_Number,
 } from '../../assets';
 import {Gap, TextInput} from '../../components';
+import {showMessage} from 'react-native-flash-message';
 
 const MyAccount = ({navigation}) => {
   return (
@@ -84,8 +85,17 @@ const MyAccount = ({navigation}) => {
           <Gap height={10} />
           <View style={styles.Log_Out}>
             <View style={styles.Log_Out1}>
+              <Gap height={35} />
               <TouchableOpacity
-                onPress={() => navigation.navigate('SignIn')}
+                onPress={() => {
+                  navigation.navigate('SignIn');
+                  showMessage({
+                    message: 'Success',
+                    description: 'Thankyou and See you again',
+                    backgroundColor: '#493F3F',
+                    type: 'default',
+                  });
+                }}
                 activeOpacity={0.7}>
                 <Log_Out style={styles.icon1} />
               </TouchableOpacity>

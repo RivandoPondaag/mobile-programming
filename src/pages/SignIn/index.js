@@ -8,6 +8,7 @@ import {
 import React from 'react';
 import {Button, Gap, TextInput} from '../../components';
 import {Logo1} from '../../assets/icons';
+import {showMessage} from 'react-native-flash-message';
 
 const SignIn = ({navigation}) => {
   return (
@@ -31,7 +32,14 @@ const SignIn = ({navigation}) => {
         <Gap height={24} />
         <Button
           title="Sign In"
-          onPress={() => navigation.navigate('MainApp')}
+          onPress={() => {
+            navigation.navigate('MainApp');
+            showMessage({
+              message: 'Info',
+              description: 'Welcome To OOKM Application',
+              type: 'info',
+            });
+          }}
         />
         <Gap height={12} />
         <View style={styles.text1}>
